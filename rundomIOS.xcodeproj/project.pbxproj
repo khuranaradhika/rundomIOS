@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10993DEC28E39A5E008CB057 /* rundomIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */; };
+		10993DEE28E39A5E008CB057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993DED28E39A5E008CB057 /* ContentView.swift */; };
+		10993DF028E39A60008CB057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10993DEF28E39A60008CB057 /* Assets.xcassets */; };
+		10993DF328E39A60008CB057 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10993DF228E39A60008CB057 /* Preview Assets.xcassets */; };
+		10993DF528E39A60008CB057 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993DF428E39A60008CB057 /* Persistence.swift */; };
+		10993DF828E39A60008CB057 /* rundomIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10993DF628E39A60008CB057 /* rundomIOS.xcdatamodeld */; };
+		10993E0228E39A61008CB057 /* rundomIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993E0128E39A61008CB057 /* rundomIOSTests.swift */; };
+		10993E0C28E39A61008CB057 /* rundomIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993E0B28E39A61008CB057 /* rundomIOSUITests.swift */; };
+		10993E0E28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993E0D28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10993DFE28E39A61008CB057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10993DE028E39A5E008CB057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10993DE728E39A5E008CB057;
+			remoteInfo = rundomIOS;
+		};
+		10993E0828E39A61008CB057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10993DE028E39A5E008CB057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10993DE728E39A5E008CB057;
+			remoteInfo = rundomIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10993DE828E39A5E008CB057 /* rundomIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rundomIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSApp.swift; sourceTree = "<group>"; };
+		10993DED28E39A5E008CB057 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10993DEF28E39A60008CB057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10993DF228E39A60008CB057 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10993DF428E39A60008CB057 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		10993DF728E39A60008CB057 /* rundomIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rundomIOS.xcdatamodel; sourceTree = "<group>"; };
+		10993DFD28E39A61008CB057 /* rundomIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rundomIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10993E0128E39A61008CB057 /* rundomIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSTests.swift; sourceTree = "<group>"; };
+		10993E0728E39A61008CB057 /* rundomIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rundomIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10993E0B28E39A61008CB057 /* rundomIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSUITests.swift; sourceTree = "<group>"; };
+		10993E0D28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10993DE528E39A5E008CB057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10993DFA28E39A61008CB057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10993E0428E39A61008CB057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10993DDF28E39A5E008CB057 = {
+			isa = PBXGroup;
+			children = (
+				10993DEA28E39A5E008CB057 /* rundomIOS */,
+				10993E0028E39A61008CB057 /* rundomIOSTests */,
+				10993E0A28E39A61008CB057 /* rundomIOSUITests */,
+				10993DE928E39A5E008CB057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10993DE928E39A5E008CB057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10993DE828E39A5E008CB057 /* rundomIOS.app */,
+				10993DFD28E39A61008CB057 /* rundomIOSTests.xctest */,
+				10993E0728E39A61008CB057 /* rundomIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10993DEA28E39A5E008CB057 /* rundomIOS */ = {
+			isa = PBXGroup;
+			children = (
+				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
+				10993DED28E39A5E008CB057 /* ContentView.swift */,
+				10993DEF28E39A60008CB057 /* Assets.xcassets */,
+				10993DF428E39A60008CB057 /* Persistence.swift */,
+				10993DF628E39A60008CB057 /* rundomIOS.xcdatamodeld */,
+				10993DF128E39A60008CB057 /* Preview Content */,
+			);
+			path = rundomIOS;
+			sourceTree = "<group>";
+		};
+		10993DF128E39A60008CB057 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10993DF228E39A60008CB057 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10993E0028E39A61008CB057 /* rundomIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				10993E0128E39A61008CB057 /* rundomIOSTests.swift */,
+			);
+			path = rundomIOSTests;
+			sourceTree = "<group>";
+		};
+		10993E0A28E39A61008CB057 /* rundomIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10993E0B28E39A61008CB057 /* rundomIOSUITests.swift */,
+				10993E0D28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift */,
+			);
+			path = rundomIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10993DE728E39A5E008CB057 /* rundomIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10993E1128E39A61008CB057 /* Build configuration list for PBXNativeTarget "rundomIOS" */;
+			buildPhases = (
+				10993DE428E39A5E008CB057 /* Sources */,
+				10993DE528E39A5E008CB057 /* Frameworks */,
+				10993DE628E39A5E008CB057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rundomIOS;
+			productName = rundomIOS;
+			productReference = 10993DE828E39A5E008CB057 /* rundomIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10993DFC28E39A61008CB057 /* rundomIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10993E1428E39A61008CB057 /* Build configuration list for PBXNativeTarget "rundomIOSTests" */;
+			buildPhases = (
+				10993DF928E39A61008CB057 /* Sources */,
+				10993DFA28E39A61008CB057 /* Frameworks */,
+				10993DFB28E39A61008CB057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10993DFF28E39A61008CB057 /* PBXTargetDependency */,
+			);
+			name = rundomIOSTests;
+			productName = rundomIOSTests;
+			productReference = 10993DFD28E39A61008CB057 /* rundomIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10993E0628E39A61008CB057 /* rundomIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10993E1728E39A61008CB057 /* Build configuration list for PBXNativeTarget "rundomIOSUITests" */;
+			buildPhases = (
+				10993E0328E39A61008CB057 /* Sources */,
+				10993E0428E39A61008CB057 /* Frameworks */,
+				10993E0528E39A61008CB057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10993E0928E39A61008CB057 /* PBXTargetDependency */,
+			);
+			name = rundomIOSUITests;
+			productName = rundomIOSUITests;
+			productReference = 10993E0728E39A61008CB057 /* rundomIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10993DE028E39A5E008CB057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					10993DE728E39A5E008CB057 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					10993DFC28E39A61008CB057 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 10993DE728E39A5E008CB057;
+					};
+					10993E0628E39A61008CB057 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 10993DE728E39A5E008CB057;
+					};
+				};
+			};
+			buildConfigurationList = 10993DE328E39A5E008CB057 /* Build configuration list for PBXProject "rundomIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10993DDF28E39A5E008CB057;
+			productRefGroup = 10993DE928E39A5E008CB057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10993DE728E39A5E008CB057 /* rundomIOS */,
+				10993DFC28E39A61008CB057 /* rundomIOSTests */,
+				10993E0628E39A61008CB057 /* rundomIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10993DE628E39A5E008CB057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10993DF328E39A60008CB057 /* Preview Assets.xcassets in Resources */,
+				10993DF028E39A60008CB057 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10993DFB28E39A61008CB057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10993E0528E39A61008CB057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10993DE428E39A5E008CB057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10993DF528E39A60008CB057 /* Persistence.swift in Sources */,
+				10993DEE28E39A5E008CB057 /* ContentView.swift in Sources */,
+				10993DF828E39A60008CB057 /* rundomIOS.xcdatamodeld in Sources */,
+				10993DEC28E39A5E008CB057 /* rundomIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10993DF928E39A61008CB057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10993E0228E39A61008CB057 /* rundomIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10993E0328E39A61008CB057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10993E0C28E39A61008CB057 /* rundomIOSUITests.swift in Sources */,
+				10993E0E28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10993DFF28E39A61008CB057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10993DE728E39A5E008CB057 /* rundomIOS */;
+			targetProxy = 10993DFE28E39A61008CB057 /* PBXContainerItemProxy */;
+		};
+		10993E0928E39A61008CB057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10993DE728E39A5E008CB057 /* rundomIOS */;
+			targetProxy = 10993E0828E39A61008CB057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10993E0F28E39A61008CB057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10993E1028E39A61008CB057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10993E1228E39A61008CB057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rundomIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RCOS.rundomIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10993E1328E39A61008CB057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rundomIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RCOS.rundomIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10993E1528E39A61008CB057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RCOS.rundomIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rundomIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rundomIOS";
+			};
+			name = Debug;
+		};
+		10993E1628E39A61008CB057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RCOS.rundomIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rundomIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rundomIOS";
+			};
+			name = Release;
+		};
+		10993E1828E39A61008CB057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RCOS.rundomIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rundomIOS;
+			};
+			name = Debug;
+		};
+		10993E1928E39A61008CB057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RCOS.rundomIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rundomIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10993DE328E39A5E008CB057 /* Build configuration list for PBXProject "rundomIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10993E0F28E39A61008CB057 /* Debug */,
+				10993E1028E39A61008CB057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10993E1128E39A61008CB057 /* Build configuration list for PBXNativeTarget "rundomIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10993E1228E39A61008CB057 /* Debug */,
+				10993E1328E39A61008CB057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10993E1428E39A61008CB057 /* Build configuration list for PBXNativeTarget "rundomIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10993E1528E39A61008CB057 /* Debug */,
+				10993E1628E39A61008CB057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10993E1728E39A61008CB057 /* Build configuration list for PBXNativeTarget "rundomIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10993E1828E39A61008CB057 /* Debug */,
+				10993E1928E39A61008CB057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10993DF628E39A60008CB057 /* rundomIOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10993DF728E39A60008CB057 /* rundomIOS.xcdatamodel */,
+			);
+			currentVersion = 10993DF728E39A60008CB057 /* rundomIOS.xcdatamodel */;
+			path = rundomIOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10993DE028E39A5E008CB057 /* Project object */;
+}
