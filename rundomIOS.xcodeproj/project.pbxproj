@@ -17,6 +17,7 @@
 		107922DB28E38F8B00B5D2EE /* rundomIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107922DA28E38F8B00B5D2EE /* rundomIOSTests.swift */; };
 		107922E528E38F8B00B5D2EE /* rundomIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107922E428E38F8B00B5D2EE /* rundomIOSUITests.swift */; };
 		107922E728E38F8B00B5D2EE /* rundomIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107922E628E38F8B00B5D2EE /* rundomIOSUITestsLaunchTests.swift */; };
+		BA5EB80A28E3981F0097B7CD /* habsldkjfbakjsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EB80928E3981F0097B7CD /* habsldkjfbakjsd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		107922E628E38F8B00B5D2EE /* rundomIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		10993DDD28E39579008CB057 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		10993DDE28E39579008CB057 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BA5EB80928E3981F0097B7CD /* habsldkjfbakjsd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habsldkjfbakjsd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				107922CE28E38F8B00B5D2EE /* LaunchScreen.storyboard */,
 				107922D128E38F8B00B5D2EE /* Info.plist */,
 				107922C928E38F8900B5D2EE /* rundomIOS.xcdatamodeld */,
+				BA5EB80928E3981F0097B7CD /* habsldkjfbakjsd.swift */,
 			);
 			path = rundomIOS;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				107922C528E38F8900B5D2EE /* ViewController.swift in Sources */,
 				107922C128E38F8900B5D2EE /* AppDelegate.swift in Sources */,
+				BA5EB80A28E3981F0097B7CD /* habsldkjfbakjsd.swift in Sources */,
 				107922CB28E38F8900B5D2EE /* rundomIOS.xcdatamodeld in Sources */,
 				107922C328E38F8900B5D2EE /* SceneDelegate.swift in Sources */,
 			);
