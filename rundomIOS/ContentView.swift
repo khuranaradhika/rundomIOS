@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  rundomIOS
 //
-//  Created by Thomas Bird on 9/27/22.
+//  Created by Rundom Development on 9/27/22.
 //
 
 import SwiftUI
