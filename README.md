@@ -6,7 +6,3 @@ Developed by Henry Webb, Tommy Bird, and Radhika Khurana
 -------
 
 Currently unreleased [WIP]
-
-final test
-
-test again
