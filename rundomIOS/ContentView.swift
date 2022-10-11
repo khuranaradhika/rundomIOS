@@ -16,7 +16,6 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-<<<<<<< HEAD
     @StateObject private var viewmodel = MapViewModel()
     @State private var showingProfile = false
     var body: some View {
@@ -25,19 +24,6 @@ struct ContentView: View {
                     showingProfile.toggle()
                 } label: {
                     Label("Profile", systemImage: "person.crop.circle")
-=======
-    
-    var body: some View {
-        Text("Rundom")
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
->>>>>>> b4fab32fefe306b9af1a91a633038bd0356ea817
                 }
             if(showingProfile){
                 ProfileView()
