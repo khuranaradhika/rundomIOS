@@ -16,6 +16,10 @@
 		10993E0228E39A61008CB057 /* rundomIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993E0128E39A61008CB057 /* rundomIOSTests.swift */; };
 		10993E0C28E39A61008CB057 /* rundomIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993E0B28E39A61008CB057 /* rundomIOSUITests.swift */; };
 		10993E0E28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993E0D28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift */; };
+		BA0E021628F60334002CE4A5 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021528F60334002CE4A5 /* ProfileEditor.swift */; };
+		BA0E021828F60358002CE4A5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021728F60358002CE4A5 /* ProfileView.swift */; };
+		BA0E021A28F60361002CE4A5 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021928F60361002CE4A5 /* MapViewModel.swift */; };
+		BA0E021C28F60373002CE4A5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021B28F60373002CE4A5 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		10993E0728E39A61008CB057 /* rundomIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rundomIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10993E0B28E39A61008CB057 /* rundomIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSUITests.swift; sourceTree = "<group>"; };
 		10993E0D28E39A61008CB057 /* rundomIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA0E021528F60334002CE4A5 /* ProfileEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		BA0E021728F60358002CE4A5 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BA0E021928F60361002CE4A5 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		BA0E021B28F60373002CE4A5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 		10993DEA28E39A5E008CB057 /* rundomIOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA0E021B28F60373002CE4A5 /* Profile.swift */,
+				BA0E021928F60361002CE4A5 /* MapViewModel.swift */,
+				BA0E021728F60358002CE4A5 /* ProfileView.swift */,
+				BA0E021528F60334002CE4A5 /* ProfileEditor.swift */,
 				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
 				10993DED28E39A5E008CB057 /* ContentView.swift */,
 				10993DEF28E39A60008CB057 /* Assets.xcassets */,
@@ -264,8 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10993DF528E39A60008CB057 /* Persistence.swift in Sources */,
+				BA0E021C28F60373002CE4A5 /* Profile.swift in Sources */,
 				10993DEE28E39A5E008CB057 /* ContentView.swift in Sources */,
+				BA0E021628F60334002CE4A5 /* ProfileEditor.swift in Sources */,
 				10993DF828E39A60008CB057 /* rundomIOS.xcdatamodeld in Sources */,
+				BA0E021A28F60361002CE4A5 /* MapViewModel.swift in Sources */,
+				BA0E021828F60358002CE4A5 /* ProfileView.swift in Sources */,
 				10993DEC28E39A5E008CB057 /* rundomIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
