@@ -18,18 +18,31 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     @StateObject private var viewmodel = MapViewModel()
     @State private var showingProfile = false
+    @State private var showingSocial = false
     var body: some View {
         ScrollView{
+            //Top Navigation Bar
+            HStack {
+                //Social Tab
+                Button {
+                    showingSocial.toggle()
+                } label: {
+                    Label("", systemImage: "person.2.circle")
+                }
+                Spacer()
+                //Logo
+                Text("Rundom")
+                Spacer()
+                //Profile
                 Button {
                     showingProfile.toggle()
                 } label: {
-                    Label("Profile", systemImage: "person.crop.circle")
+                    Label("", systemImage: "person.crop.circle")
                 }
-            if(showingProfile){
-                ProfileView()
-                
+                if(showingProfile){
+                    ProfileView()
+                }
             }
-            
             Map(coordinateRegion: $viewmodel.region, showsUserLocation: true)
                 .frame(height: 400)
                 .accentColor(Color(.systemRed))
