@@ -1,7 +1,11 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
       "filename" : "rsz_1logo.png",
+=======
+      "filename" : "icon.png",
+>>>>>>> b4fab32fefe306b9af1a91a633038bd0356ea817
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
