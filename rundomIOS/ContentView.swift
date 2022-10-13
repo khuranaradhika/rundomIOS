@@ -58,7 +58,6 @@ struct ContentView: View {
                 .shadow(color: .gray, radius: 3, x: 0, y: 3)
                 .offset(y: 310)
                 
-                Text("Test message")
             }
           
         }
