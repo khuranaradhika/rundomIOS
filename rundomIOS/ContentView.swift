@@ -19,6 +19,18 @@ struct ContentView: View {
     @StateObject private var viewmodel = MapViewModel()
     @State private var showingProfile = false
     @State private var showingSocial = false
+    
+    // Screen width.
+    public var screenWidth: CGFloat {
+        return UIScreen.main.bounds.width
+    }
+
+    // Screen height.
+    public var screenHeight: CGFloat {
+        return UIScreen.main.bounds.height
+    }
+
+    
     var body: some View {
         
         NavigationView{
@@ -29,34 +41,35 @@ struct ContentView: View {
                        Image(systemName: "person.line.dotted.person")})
                     .font(.system(size: 30))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    .offset(x: 30)
+                    .offset(x: screenWidth/20)
                     
                     Spacer()
                     //Logo
-                    Text("Rundom")
-                        .offset(x: -125)
-                        .font(.system(size: 25))
+                    Image(systemName: "figure.run")
+                        .offset(x: -screenWidth/2.85)
+                        .font(.system(size: 35))
+                        .foregroundColor(.blue)
                     //Profile
                     
                     NavigationLink(destination: ProfileView(), label: {
                        Image(systemName: "person.crop.circle")})
                     .font(.system(size: 30))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    .offset(x:-30)
+                    .offset(x:-screenWidth/20 )
                 }
                  
-                .offset(y:-290)
+                .offset(y:-screenHeight/3.2)
                 Text("Weekly Stats")
                     .font(.system(size: 30))
-                    .offset(y: -250)
+                    .offset(y: -screenHeight/3.5)
                 Text("You gave 34 ppl head this week")
-                    .offset(y:-200)
+                    .offset(y:-screenHeight/4)
                 
                 NavigationLink(destination: MapView(), label: {
                    Image(systemName: "map.circle")})
                 .font(.system(size: 150))
                 .shadow(color: .gray, radius: 3, x: 0, y: 3)
-                .offset(y: 310)
+                .offset(y: screenHeight/3.2)
                 
             }
           
