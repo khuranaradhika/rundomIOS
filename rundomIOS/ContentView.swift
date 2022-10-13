@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import CoreData
+import CoreLocation
 import MapKit
 
 struct ContentView: View {
@@ -20,40 +20,51 @@ struct ContentView: View {
     @State private var showingProfile = false
     @State private var showingSocial = false
     var body: some View {
-        ScrollView{
-            //Top Navigation Bar
-            HStack {
-                //Social Tab
-                Button {
-                    showingSocial.toggle()
-                } label: {
-                    Label("", systemImage: "person.2.circle")
-                }
-                Spacer()
-                //Logo
-                Text("Rundom")
-                Spacer()
-                //Profile
-                Button {
-                    showingProfile.toggle()
-                } label: {
-                    Label("", systemImage: "person.crop.circle")
-                }
-                if(showingProfile){
-                    ProfileView()
-                }
-            }
-            Map(coordinateRegion: $viewmodel.region, showsUserLocation: true)
-                .frame(height: 400)
-                .accentColor(Color(.systemRed))
-            
-                .onAppear{
-                    viewmodel.check_location_enabled()
-                }
-            
-        }
         
+        NavigationView{
+            VStack{
+                //Top Navigation Bar
+                HStack {
+                    NavigationLink(destination: MapView(), label: {
+                       Image(systemName: "person.line.dotted.person")})
+                    .font(.system(size: 30))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
+                    .offset(x: 30)
+                    
+                    Spacer()
+                    //Logo
+                    Text("Rundom")
+                        .offset(x: -125)
+                        .font(.system(size: 25))
+                    //Profile
+                    
+                    NavigationLink(destination: ProfileView(), label: {
+                       Image(systemName: "person.crop.circle")})
+                    .font(.system(size: 30))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
+                    .offset(x:-30)
+                }
+                 
+                .offset(y:-290)
+                Text("Weekly Stats")
+                    .font(.system(size: 30))
+                    .offset(y: -250)
+                Text("You gave 34 ppl head this week")
+                    .offset(y:-200)
+                
+                NavigationLink(destination: MapView(), label: {
+                   Image(systemName: "map.circle")})
+                .font(.system(size: 150))
+                .shadow(color: .gray, radius: 3, x: 0, y: 3)
+                .offset(y: 310)
+                
+                
+            }
+          
+        }
     }
+        
+    
 }
        
 
