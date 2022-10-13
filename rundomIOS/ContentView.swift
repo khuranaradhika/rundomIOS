@@ -8,8 +8,20 @@
 import SwiftUI
 import CoreLocation
 import MapKit
+import FirebaseCore
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 
 struct ContentView: View {
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
@@ -32,7 +44,6 @@ struct ContentView: View {
 
     
     var body: some View {
-        
         NavigationView{
             VStack{
                 //Top Navigation Bar
