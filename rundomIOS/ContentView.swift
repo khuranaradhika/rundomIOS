@@ -25,7 +25,7 @@ struct ContentView: View {
             VStack{
                 //Top Navigation Bar
                 HStack {
-                    NavigationLink(destination: MapView(), label: {
+                    NavigationLink(destination: SocialView(), label: {
                        Image(systemName: "person.line.dotted.person")})
                     .font(.system(size: 30))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
