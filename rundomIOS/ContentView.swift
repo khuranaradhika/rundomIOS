@@ -31,6 +31,7 @@ struct ContentView: View {
     @StateObject private var viewmodel = MapViewModel()
     @State private var showingProfile = false
     @State private var showingSocial = false
+    @State private var stat_shit = "420"
     
     // Screen width.
     public var screenWidth: CGFloat {
@@ -46,45 +47,81 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
+                
+
                 //Top Navigation Bar
                 HStack {
                     NavigationLink(destination: SocialView(), label: {
                        Image(systemName: "person.line.dotted.person")})
-                    .font(.system(size: 30))
+                    .font(.system(size: 40))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x: screenWidth/20)
                     
                     Spacer()
                     //Logo
                     Image(systemName: "figure.run")
-                        .offset(x: -screenWidth/2.85)
-                        .font(.system(size: 35))
+                        .offset(x: -screenWidth/3)
+                        .font(.system(size: 40))
+                        .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         .foregroundColor(.blue)
                     //Profile
                     
                     NavigationLink(destination: ProfileView(), label: {
                        Image(systemName: "person.crop.circle")})
-                    .font(.system(size: 30))
+                    .font(.system(size: 40))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x:-screenWidth/20 )
                 }
                  
-                .offset(y:-screenHeight/3.2)
-                Text("Weekly Stats")
-                    .font(.system(size: 30))
-                    .offset(y: -screenHeight/3.5)
-                Text("You gave 34 ppl head this week")
-                    .offset(y:-screenHeight/4)
+                NavigationView{
+                    List{
+                        
+                        HStack{
+                            Text("Total Miles Ran")
+                                Spacer()
+                            Text("420")
+                        }
+                        HStack{
+                            Text("Total Running Time")
+                                Spacer()
+                            Text("420")
+                        }
+                        HStack{
+                            Text("Total Goals Completed")
+                                Spacer()
+                            Text("420")
+                        }
+                        HStack{
+                            Text("Total Number of Runs")
+                                Spacer()
+                            Text("420")
+                        }
+                        HStack{
+                            Text("Miles Until Goal")
+                                Spacer()
+                            Text("420")
+                        }
+
+                        
+
+                    }
+                    .navigationTitle("This Week's Stats:")
+                    .onAppear{
+                        UITableView.appearance().backgroundColor = .clear
+
+                    }
+                    
+                }
                 
                 NavigationLink(destination: MapView(), label: {
                    Image(systemName: "map.circle")})
                 .font(.system(size: 150))
                 .shadow(color: .gray, radius: 3, x: 0, y: 3)
-                .offset(y: screenHeight/3.2)
+                .offset(y: screenHeight/40)
                 
             }
-          
         }
+        
     }
         
     
