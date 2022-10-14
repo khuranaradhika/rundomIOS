@@ -20,6 +20,7 @@ struct SocialView: View {
                     }
                 }
             }
+            
         
     }
 }
