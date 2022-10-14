@@ -35,6 +35,7 @@
 		104D236728F8C3FB00C73DAF /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 104D236628F8C3FB00C73DAF /* FirebaseRemoteConfigSwift */; };
 		104D236928F8C3FB00C73DAF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 104D236828F8C3FB00C73DAF /* FirebaseStorage */; };
 		104D236B28F8C3FB00C73DAF /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 104D236A28F8C3FB00C73DAF /* FirebaseStorageCombine-Community */; };
+		104D236E28F9E5A400C73DAF /* motd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D236D28F9E5A400C73DAF /* motd.swift */; };
 		10993DEC28E39A5E008CB057 /* rundomIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */; };
 		10993DEE28E39A5E008CB057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10993DED28E39A5E008CB057 /* ContentView.swift */; };
 		10993DF028E39A60008CB057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10993DEF28E39A60008CB057 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		1016D23828F8BE75002321E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		104D236D28F9E5A400C73DAF /* motd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motd.swift; sourceTree = "<group>"; };
 		10993DE828E39A5E008CB057 /* rundomIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rundomIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rundomIOSApp.swift; sourceTree = "<group>"; };
 		10993DED28E39A5E008CB057 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		104D236C28F9E58100C73DAF /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				104D236D28F9E5A400C73DAF /* motd.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		104D236F28F9E62A00C73DAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA0E021928F60361002CE4A5 /* MapViewModel.swift */,
+				BA0E021728F60358002CE4A5 /* ProfileView.swift */,
+				10993DED28E39A5E008CB057 /* ContentView.swift */,
+				BA2643C028F7AFF6003628C7 /* SocialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		104D237028F9E65200C73DAF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA0E021B28F60373002CE4A5 /* Profile.swift */,
+				BA0E021528F60334002CE4A5 /* ProfileEditor.swift */,
+				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		10993DDF28E39A5E008CB057 = {
 			isa = PBXGroup;
 			children = (
@@ -164,18 +195,14 @@
 		10993DEA28E39A5E008CB057 /* rundomIOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA0E021B28F60373002CE4A5 /* Profile.swift */,
-				BA0E021928F60361002CE4A5 /* MapViewModel.swift */,
-				BA0E021728F60358002CE4A5 /* ProfileView.swift */,
-				BA0E021528F60334002CE4A5 /* ProfileEditor.swift */,
-				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
-				10993DED28E39A5E008CB057 /* ContentView.swift */,
+				104D236C28F9E58100C73DAF /* Data Manager */,
+				104D237028F9E65200C73DAF /* App */,
+				104D236F28F9E62A00C73DAF /* Views */,
 				10993DEF28E39A60008CB057 /* Assets.xcassets */,
 				10993DF428E39A60008CB057 /* Persistence.swift */,
 				10993DF628E39A60008CB057 /* rundomIOS.xcdatamodeld */,
 				1016D23828F8BE75002321E3 /* GoogleService-Info.plist */,
 				10993DF128E39A60008CB057 /* Preview Content */,
-				BA2643C028F7AFF6003628C7 /* SocialView.swift */,
 			);
 			path = rundomIOS;
 			sourceTree = "<group>";
@@ -369,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10993DF528E39A60008CB057 /* Persistence.swift in Sources */,
+				104D236E28F9E5A400C73DAF /* motd.swift in Sources */,
 				BA0E021C28F60373002CE4A5 /* Profile.swift in Sources */,
 				10993DEE28E39A5E008CB057 /* ContentView.swift in Sources */,
 				BA0E021628F60334002CE4A5 /* ProfileEditor.swift in Sources */,
