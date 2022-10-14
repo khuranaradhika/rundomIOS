@@ -53,7 +53,7 @@ struct ContentView: View {
                 HStack {
                     NavigationLink(destination: SocialView(), label: {
                        Image(systemName: "person.line.dotted.person")})
-                    .font(.system(size: 40))
+                    .font(.system(size: screenWidth/10))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x: screenWidth/20)
                     
@@ -61,14 +61,14 @@ struct ContentView: View {
                     //Logo
                     Image(systemName: "figure.run")
                         .offset(x: -screenWidth/3.2)
-                        .font(.system(size: 40))
+                        .font(.system(size: screenWidth/10))
                         .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         .foregroundColor(.blue)
                     //Profile
                     
                     NavigationLink(destination: ProfileView(), label: {
                        Image(systemName: "person.crop.circle")})
-                    .font(.system(size: 40))
+                    .font(.system(size: screenWidth/10))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x:-screenWidth/20 )
                 }
@@ -116,7 +116,7 @@ struct ContentView: View {
                 
                 NavigationLink(destination: MapView(), label: {
                    Image(systemName: "map.circle")})
-                .font(.system(size: 150))
+                .font(.system(size: screenWidth/3))
                 .shadow(color: .gray, radius: 3, x: 0, y: 3)
                 .offset(y: screenHeight/40)
                 
