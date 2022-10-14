@@ -60,7 +60,7 @@ struct ContentView: View {
                     Spacer()
                     //Logo
                     Image(systemName: "figure.run")
-                        .offset(x: -screenWidth/3)
+                        .offset(x: -screenWidth/3.2)
                         .font(.system(size: 40))
                         .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         .foregroundColor(.blue)
@@ -72,7 +72,7 @@ struct ContentView: View {
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x:-screenWidth/20 )
                 }
-                 
+                .offset(y: -screenHeight/150)
                 NavigationView{
                     List{
                         
