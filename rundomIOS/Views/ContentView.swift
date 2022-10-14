@@ -75,14 +75,9 @@ struct ContentView: View {
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x:-screenWidth/20 )
                 }
-<<<<<<< Updated upstream
                 Spacer()
-=======
-                @Published var message: [Motd]
->>>>>>> Stashed changes
                 Text("MOTD:")
-                Text(message)
-                .offset(y: -screenHeight/200)
+                    .offset(y: -screenHeight/200)
                 NavigationView{
                     List{
                         
