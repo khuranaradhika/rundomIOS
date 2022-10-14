@@ -9,6 +9,8 @@ import SwiftUI
 import CoreLocation
 import MapKit
 import FirebaseCore
+import FirebaseDatabase
+
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -32,6 +34,7 @@ struct ContentView: View {
     @State private var showingProfile = false
     @State private var showingSocial = false
     @State private var stat_shit = "420"
+    
     
     // Screen width.
     public var screenWidth: CGFloat {
@@ -72,8 +75,13 @@ struct ContentView: View {
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x:-screenWidth/20 )
                 }
+<<<<<<< Updated upstream
                 Spacer()
+=======
+                @Published var message: [Motd]
+>>>>>>> Stashed changes
                 Text("MOTD:")
+                Text(message)
                 .offset(y: -screenHeight/200)
                 NavigationView{
                     List{
