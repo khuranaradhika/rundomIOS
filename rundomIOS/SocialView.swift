@@ -9,9 +9,18 @@ import Foundation
 import SwiftUI
 struct SocialView: View {
     var body: some View {
-        ScrollView{
-            
-        }
+            List{
+                ForEach(0..<20){ _ in
+                    HStack{
+                        ForEach(0..<2){ _ in
+                            Image("BigBird")
+                                .resizable()
+                                .scaledToFit()
+                        }
+                    }
+                }
+            }
+        
     }
 }
 
