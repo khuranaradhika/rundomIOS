@@ -55,18 +55,19 @@ struct ContentView: View {
                 //Top Navigation Bar
                 HStack {
                     NavigationLink(destination: SocialView(), label: {
-                       Image(systemName: "person.line.dotted.person")})
+                       Image(systemName: "square.grid.3x3")})
                     .font(.system(size: screenWidth/10))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x: screenWidth/20)
                     
                     Spacer()
                     //Logo
-                    Image(systemName: "figure.run")
-                        .offset(x: -screenWidth/3.2)
-                        .font(.system(size: screenWidth/10))
-                        .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        .foregroundColor(.blue)
+                    NavigationLink(destination: SocialView(), label: {
+                       Image(systemName: "person.line.dotted.person")})
+                    .font(.system(size: screenWidth/10))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
+                    .offset(x: -screenWidth/3.8)
+                   
                     //Profile
                     
                     NavigationLink(destination: ProfileView(), label: {
