@@ -50,6 +50,7 @@
 		BA0E021A28F60361002CE4A5 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021928F60361002CE4A5 /* MapViewModel.swift */; };
 		BA0E021C28F60373002CE4A5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021B28F60373002CE4A5 /* Profile.swift */; };
 		BA2643C128F7AFF6003628C7 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2643C028F7AFF6003628C7 /* SocialView.swift */; };
+		BA98FFDB28FA51040091AC03 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98FFDA28FA51040091AC03 /* FriendsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		BA0E021928F60361002CE4A5 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		BA0E021B28F60373002CE4A5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		BA2643C028F7AFF6003628C7 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		BA98FFDA28FA51040091AC03 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				BA0E021728F60358002CE4A5 /* ProfileView.swift */,
 				10993DED28E39A5E008CB057 /* ContentView.swift */,
 				BA2643C028F7AFF6003628C7 /* SocialView.swift */,
+				BA98FFDA28FA51040091AC03 /* FriendsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				104D237228F9EACF00C73DAF /* Motd.swift in Sources */,
 				BA2643C128F7AFF6003628C7 /* SocialView.swift in Sources */,
 				BA0E021A28F60361002CE4A5 /* MapViewModel.swift in Sources */,
+				BA98FFDB28FA51040091AC03 /* FriendsView.swift in Sources */,
 				BA0E021828F60358002CE4A5 /* ProfileView.swift in Sources */,
 				10993DEC28E39A5E008CB057 /* rundomIOSApp.swift in Sources */,
 			);
