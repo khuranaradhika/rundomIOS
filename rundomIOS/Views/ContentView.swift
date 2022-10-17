@@ -46,13 +46,9 @@ struct ContentView: View {
     public var screenHeight: CGFloat {
         return UIScreen.main.bounds.height
     }
-
-    
     var body: some View {
         NavigationView{
             VStack{
-                
-
                 //Top Navigation Bar
                 HStack {
                     NavigationLink(destination: SocialView(), label: {
@@ -60,7 +56,6 @@ struct ContentView: View {
                     .font(.system(size: screenWidth/12))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x: screenWidth/20)
-                    
                     Spacer()
                     //Logo
                     NavigationLink(destination: FriendsView(), label: {
@@ -68,9 +63,7 @@ struct ContentView: View {
                     .font(.system(size: screenWidth/12))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x: -screenWidth/3.33)
-                   
                     //Profile
-                    
                     NavigationLink(destination: ProfileView(), label: {
                        Image(systemName: "person.crop.circle")})
                     .font(.system(size: screenWidth/12))
@@ -82,7 +75,6 @@ struct ContentView: View {
                     .offset(y: -screenHeight/200)
                 NavigationView{
                     List{
-                        
                         HStack{
                             Text("Total Miles Ran")
                                 Spacer()
@@ -108,30 +100,20 @@ struct ContentView: View {
                                 Spacer()
                             Text("420")
                         }
-
-                        
-
                     }
                     .navigationTitle("This Week's Stats:")
                     .onAppear{
                         UITableView.appearance().backgroundColor = .clear
-
                     }
-                    
                 }
-                
                 NavigationLink(destination: MapView(), label: {
                    Image(systemName: "map.circle")})
                 .font(.system(size: screenWidth/3.5))
                 .shadow(color: .gray, radius: 3, x: 0, y: 3)
                 .offset(y: screenHeight/40)
-                
             }
         }
-        
     }
-        
-    
 }
        
 

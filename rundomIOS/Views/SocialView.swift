@@ -7,8 +7,47 @@
 
 import Foundation
 import SwiftUI
+
+
 struct SocialView: View {
+    // Screen width.
+    public var screenWidth: CGFloat {
+        return UIScreen.main.bounds.width
+    }
+
+    // Screen height.
+    public var screenHeight: CGFloat {
+        return UIScreen.main.bounds.height
+    }
     var body: some View {
+        VStack{
+            
+            NavigationView{
+                HStack {
+                    NavigationLink(destination: SocialView(), label: {
+                        Image(systemName: "square.grid.3x3")})
+                    .font(.system(size: screenWidth/12))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
+                    .offset(x: screenWidth/20)
+                    
+                    Spacer()
+                    //Logo
+                    NavigationLink(destination: FriendsView(), label: {
+                        Image(systemName: "person.line.dotted.person")})
+                    .font(.system(size: screenWidth/12))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
+                    .offset(x: -screenWidth/3.33)
+                    
+                    //Profile
+                    
+                    NavigationLink(destination: ProfileView(), label: {
+                        Image(systemName: "person.crop.circle")})
+                    .font(.system(size: screenWidth/12))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
+                    .offset(x:-screenWidth/20 )
+                }
+                .offset(y: -screenHeight/5)
+            }
             List{
                 ForEach(0..<20){ _ in
                     HStack{
@@ -21,7 +60,7 @@ struct SocialView: View {
                 }
             }
             
-        
+        }
     }
 }
 
