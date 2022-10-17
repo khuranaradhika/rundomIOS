@@ -11,7 +11,7 @@ import MapKit
 //data for creating map easier
 enum MapDetails{
     static let startingLocation = CLLocationCoordinate2D(latitude: 42.727680, longitude: -73.691063)
-    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
 }
    
 //==================================================================================
@@ -26,6 +26,7 @@ struct MapView: View{
                 MapModel.check_location_enabled()
             }
     }
+    
 }
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
     @Published var region = MKCoordinateRegion(
@@ -39,6 +40,7 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
         }
         else{print("locations off")}
     }
+    
     //Checking if we have permission to use location
     private func check_authorization() {
         guard let locationManager = locationManager else{return}
