@@ -24,34 +24,22 @@ struct SocialView: View {
             
             NavigationView{
                 HStack {
-                    NavigationLink(destination: SocialView(), label: {
-                        Image(systemName: "square.grid.3x3")})
-                    .font(.system(size: screenWidth/12))
+                    //This link is broken somehow
+                    NavigationLink(destination: ContentView(), label: {
+                        Image(systemName: "arrow.uturn.backward.circle")})
+                    .font(.system(size: screenWidth/10))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    .offset(x: screenWidth/20)
+                    .offset(x: -screenWidth/2.5)
                     
-                    Spacer()
-                    //Logo
-                    NavigationLink(destination: FriendsView(), label: {
-                        Image(systemName: "person.line.dotted.person")})
-                    .font(.system(size: screenWidth/12))
-                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    .offset(x: -screenWidth/3.33)
-                    
-                    //Profile
-                    
-                    NavigationLink(destination: ProfileView(), label: {
-                        Image(systemName: "person.crop.circle")})
-                    .font(.system(size: screenWidth/12))
-                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    .offset(x:-screenWidth/20 )
                 }
-                .offset(y: -screenHeight/130)
+                .offset(y: -screenHeight/40)
             }
+            Text("Here You Will See Your Friends Activity")
+                .offset(y: -screenHeight/30)
             List{
                 ForEach(0..<20){ _ in
                     HStack{
-                        ForEach(0..<2){ _ in
+                        ForEach(0..<3){ _ in
                             Image("BigBird")
                                 .resizable()
                                 .scaledToFit()
@@ -59,11 +47,8 @@ struct SocialView: View {
                     }
                 }
             }
-            .offset(y: -screenHeight/290)
-            .frame(minHeight: screenHeight/1.19)
-            
-        
-            
+            .offset(y: -screenHeight/60)
+            .frame(minHeight: screenHeight/1.3)
         }
         
     }
