@@ -25,6 +25,7 @@ struct ContentView: View {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var firestoreManager: FirestoreManager
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -77,7 +78,7 @@ struct ContentView: View {
                     .offset(x:-screenWidth/20 )
                 }
                 Spacer()
-                Text("MOTD:")
+                Text("MOTD: \(firestoreManager.message)")
                     .offset(y: -screenHeight/200)
                 NavigationView{
                     List{
@@ -143,6 +144,8 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(FirestoreManager())
     }
 }
