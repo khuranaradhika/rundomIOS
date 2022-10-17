@@ -59,6 +59,7 @@ struct SocialView: View {
                     }
                 }
             }
+            .offset(y: screenHeight/3)
             
         }
     }
