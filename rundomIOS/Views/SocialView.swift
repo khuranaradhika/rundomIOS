@@ -46,7 +46,7 @@ struct SocialView: View {
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .offset(x:-screenWidth/20 )
                 }
-                .offset(y: -screenHeight/5)
+                .offset(y: -screenHeight/130)
             }
             List{
                 ForEach(0..<20){ _ in
@@ -59,9 +59,13 @@ struct SocialView: View {
                     }
                 }
             }
-            .offset(y: screenHeight/3)
+            .offset(y: -screenHeight/290)
+            .frame(minHeight: screenHeight/1.19)
+            
+        
             
         }
+        
     }
 }
 
