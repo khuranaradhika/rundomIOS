@@ -22,20 +22,12 @@ struct SocialView: View {
     var body: some View {
         VStack{
             
-            NavigationView{
-                HStack {
-                    //This link is broken somehow
-                    NavigationLink(destination: ContentView(), label: {
-                        Image(systemName: "arrow.uturn.backward.circle")})
-                    .font(.system(size: screenWidth/10))
-                    .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    .offset(x: -screenWidth/2.5)
-                    
-                }
-                .offset(y: -screenHeight/40)
-            }
+            
             Text("Here You Will See Your Friends Activity")
-                .offset(y: -screenHeight/30)
+                .offset(y: screenHeight/90)
+                .font(.system(size: screenWidth/20))
+                .shadow(color: .gray, radius: 2, x: 0, y: 2)
+
             List{
                 ForEach(0..<20){ _ in
                     HStack{
@@ -47,7 +39,7 @@ struct SocialView: View {
                     }
                 }
             }
-            .offset(y: -screenHeight/60)
+            .offset(y: screenHeight/70)
             .frame(minHeight: screenHeight/1.3)
         }
         
