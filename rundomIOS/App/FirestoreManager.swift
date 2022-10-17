@@ -41,6 +41,3 @@ class FirestoreManager: ObservableObject {
     
 }
 
-//fetch messages
-
-

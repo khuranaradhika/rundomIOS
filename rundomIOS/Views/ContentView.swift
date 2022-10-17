@@ -8,8 +8,7 @@
 import SwiftUI
 import CoreLocation
 import MapKit
-import FirebaseCore
-import FirebaseDatabase
+import Firebase
 
 //==================================================================================
 
