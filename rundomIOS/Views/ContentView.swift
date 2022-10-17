@@ -69,12 +69,26 @@ struct ContentView: View {
                     List{
                         HStack{Text("Total Miles Ran"); Spacer(); Text("420")}
                         HStack{Text("Total Running Time"); Spacer(); Text("420")}
-                        HStack{Text("Total Goals Completed"); Spacer(); Text("420")}
                         HStack{Text("Total Number of Runs"); Spacer(); Text("420")}
                         HStack{Text("Miles Until Goal"); Spacer(); Text("420")}
                     }
-                    .navigationTitle("This Week's Stats:")
+                    .navigationTitle("Your Week's Stats:")
+                    .frame(minHeight: screenHeight/3)
+                    .offset(y: screenHeight/15)
                 }
+                Spacer()
+                NavigationView{
+                    List{
+                        HStack{Text("Total Miles Ran"); Spacer(); Text("420")}
+                        HStack{Text("Total Running Time"); Spacer(); Text("420")}
+                       
+                    }
+                    .navigationTitle("Your Recent Badges:")
+                    .offset(y: screenHeight/50)
+                }
+                
+                
+                
                 //Map Page
                 NavigationLink(destination: MapView(), label: {
                    Image(systemName: "map.circle")})
