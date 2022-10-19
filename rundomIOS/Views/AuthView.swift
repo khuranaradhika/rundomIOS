@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Firebase
 
 struct AuthView: View {
     @State private var email = ""
@@ -27,9 +28,9 @@ struct AuthView: View {
                     Text("Rundom")
                     Image(systemName: "figure.run")
                 }
-                    .foregroundColor(.white)
-                    .font(.system(size: 50, weight: .bold, design: .rounded))
-                    .offset(x: -50, y:-100)
+                .foregroundColor(.white)
+                .font(.system(size: 50, weight: .bold, design: .rounded))
+                .offset(x: -50, y:-100)
                 
                 TextField("Email", text: $email)
                     .foregroundColor(.white)
@@ -58,7 +59,7 @@ struct AuthView: View {
                     .foregroundColor(.white)
                 
                 Button{
-                    //sign up
+                    register()
                 } label: {
                     Text("Sign up")
                         .bold()
@@ -73,7 +74,7 @@ struct AuthView: View {
                 .offset(y: 110)
                 
                 Button {
-                    //login
+                    login()
                 } label: {
                     Text("Already have an account? Login")
                         .bold()
@@ -85,6 +86,22 @@ struct AuthView: View {
             .frame(width: 350)
         }
         .ignoresSafeArea()
+    }
+    
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
     }
 }
 
