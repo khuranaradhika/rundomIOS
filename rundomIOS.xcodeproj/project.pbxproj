@@ -97,13 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		104D236C28F9E58100C73DAF /* Data Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Data Manager";
-			sourceTree = "<group>";
-		};
 		104D236F28F9E62A00C73DAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +143,6 @@
 		10993DEA28E39A5E008CB057 /* rundomIOS */ = {
 			isa = PBXGroup;
 			children = (
-				104D236C28F9E58100C73DAF /* Data Manager */,
 				104D237028F9E65200C73DAF /* App */,
 				104D236F28F9E62A00C73DAF /* Views */,
 				10993DEF28E39A60008CB057 /* Assets.xcassets */,
