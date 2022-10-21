@@ -3,6 +3,7 @@ See LICENSE folder for this sample’s licensing information.
 
 Abstract:
 A view that presents a map.
+Contributed by Radhika Khurana on 10/16/22.
 */
 
 import SwiftUI
