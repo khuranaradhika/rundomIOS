@@ -27,6 +27,8 @@
 		BA0E021C28F60373002CE4A5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E021B28F60373002CE4A5 /* Profile.swift */; };
 		BA2643C128F7AFF6003628C7 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2643C028F7AFF6003628C7 /* SocialView.swift */; };
 		BA98FFDB28FA51040091AC03 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98FFDA28FA51040091AC03 /* FriendsView.swift */; };
+		BA9C662329021E0100B9AF10 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C662229021E0100B9AF10 /* LoginView.swift */; };
+		BA9C662529022CC200B9AF10 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C662429022CC200B9AF10 /* RunView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		BA0E021B28F60373002CE4A5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		BA2643C028F7AFF6003628C7 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
 		BA98FFDA28FA51040091AC03 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		BA9C662229021E0100B9AF10 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA9C662429022CC200B9AF10 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,9 @@
 				BA0E021728F60358002CE4A5 /* ProfileView.swift */,
 				10993DED28E39A5E008CB057 /* ContentView.swift */,
 				BA2643C028F7AFF6003628C7 /* SocialView.swift */,
+				BA9C662229021E0100B9AF10 /* LoginView.swift */,
 				BA98FFDA28FA51040091AC03 /* FriendsView.swift */,
+				BA9C662429022CC200B9AF10 /* RunView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,8 +120,8 @@
 			children = (
 				BA0E021B28F60373002CE4A5 /* Profile.swift */,
 				BA0E021528F60334002CE4A5 /* ProfileEditor.swift */,
-				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
 				10683EE028FCD23500288D64 /* FirestoreManager.swift */,
+				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -321,9 +327,11 @@
 				10993DF528E39A60008CB057 /* Persistence.swift in Sources */,
 				BA0E021C28F60373002CE4A5 /* Profile.swift in Sources */,
 				10993DEE28E39A5E008CB057 /* ContentView.swift in Sources */,
+				BA9C662529022CC200B9AF10 /* RunView.swift in Sources */,
 				BA0E021628F60334002CE4A5 /* ProfileEditor.swift in Sources */,
 				10993DF828E39A60008CB057 /* rundomIOS.xcdatamodeld in Sources */,
 				BA2643C128F7AFF6003628C7 /* SocialView.swift in Sources */,
+				BA9C662329021E0100B9AF10 /* LoginView.swift in Sources */,
 				10683EE128FCD23500288D64 /* FirestoreManager.swift in Sources */,
 				BA0E021A28F60361002CE4A5 /* MapViewModel.swift in Sources */,
 				BA98FFDB28FA51040091AC03 /* FriendsView.swift in Sources */,

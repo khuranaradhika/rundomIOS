@@ -18,13 +18,28 @@ enum MapDetails{
 
 struct MapView: View{
     @StateObject private var MapModel = MapViewModel()
+    // Screen width.
+    public var screenWidth: CGFloat {return UIScreen.main.bounds.width}
+    // Screen height.
+    public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
     var body: some View{
-        Map(coordinateRegion: $MapModel.region, showsUserLocation: true)
-            .accentColor(Color(.systemRed))
-            .ignoresSafeArea()
-            .onAppear{
-                MapModel.check_location_enabled()
+        //VStack{
+            Map(coordinateRegion: $MapModel.region, showsUserLocation: true)
+                .accentColor(Color(.systemRed))
+                .ignoresSafeArea()
+                .frame(height: screenHeight/1.3)
+                .onAppear{
+                    MapModel.check_location_enabled()
+                }
+            NavigationView{
+                NavigationLink(destination: RunView(), label: {
+                    Text("StartRun")})
+                .font(.system(size: screenWidth/8))
+                .shadow(color: .gray, radius: 3, x: 0, y: 3)
+                .offset(y: screenHeight/85)
+                
             }
+        //}
     }
     
 }

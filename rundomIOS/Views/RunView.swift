@@ -1,0 +1,101 @@
+//
+//  RunView.swift
+//  rundomIOS
+//
+//  Created by Henry Webb on 10/20/22.
+//
+
+import Foundation
+import SwiftUI
+import MapKit
+
+//data for creating map easier
+enum MapDetailsRun{
+    static let startingLocation = CLLocationCoordinate2D(latitude: 42.727680, longitude: -73.691063)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+}
+   
+//==================================================================================
+
+struct RunView: View{
+    @StateObject private var RunModel = RunViewModel()
+    // Screen width.
+    public var screenWidth: CGFloat {return UIScreen.main.bounds.width}
+    // Screen height.
+    public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
+    var body: some View{
+        VStack{
+            
+            Map(coordinateRegion: $RunModel.region, showsUserLocation: true)
+                .accentColor(Color(.systemRed))
+                .ignoresSafeArea()
+                .frame(height: screenHeight/1.8)
+                .offset(y: -screenHeight/5.5)
+        
+                
+            
+                Text("Current Run")
+                    .font(.system(size: screenWidth/13))
+                    .offset(x: -screenWidth/4, y: -screenHeight/5.5)
+            HStack{
+                Text("Distance: ")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/6.5)
+                    .padding(.leading)
+                Spacer()
+                Text("4.20 Miles")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/6.5)
+                    .padding(.trailing)
+            }
+            HStack{
+                Text("Time: ")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/7.5)
+                    .padding(.leading)
+                Spacer()
+                Text("42:69")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/7.5)
+                    .padding(.trailing)
+            }
+            HStack{
+                Text("Pace: ")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/10.5)
+                    .padding(.leading)
+                Spacer()
+                Text("4:20/Mile")
+                    .font(.system(size: screenWidth/16))
+                    .offset(y: -screenHeight/10.5)
+                    .padding(.trailing)
+            }
+            HStack{
+                Text("Target: ")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/14.5)
+                    .padding(.leading)
+                Spacer()
+                Text("4.2 Miles Until Goal")
+                    .font(.system(size: screenWidth/16))
+                    .offset( y: -screenHeight/14.5)
+                    .padding(.trailing)
+
+            }
+            
+        }
+        
+        
+    }
+    
+}
+final class RunViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
+    @Published var region = MKCoordinateRegion(
+        center: MapDetails.startingLocation,
+        span: MapDetails.defaultSpan)
+    var locationManager: CLLocationManager?
+    
+}
+struct RunView_Previews: PreviewProvider {
+    static var previews: some View {RunView()}
+}

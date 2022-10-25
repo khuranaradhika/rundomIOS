@@ -59,7 +59,7 @@ struct ContentView: View {
                         .offset(x: screenWidth/20)
                         Spacer()
                         //Friends Page
-                        NavigationLink(destination: FriendsView(), label: {
+                        NavigationLink(destination: RunView(), label: {
                            Image(systemName: "person.line.dotted.person")})
                         .font(.system(size: screenWidth/12))
                         .shadow(color: .gray, radius: 2, x: 0, y: 2)
@@ -195,6 +195,7 @@ struct ContentView: View {
                 }
             }
         }
+        .frame(height: screenHeight)
     }
 //FUNCTIONS ==========
     //login func
