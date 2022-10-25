@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import Firebase
+
 struct ProfileView: View {
     @Environment(\.editMode) var editMode
     @State private var draftProfile = Profile.default
@@ -34,9 +36,33 @@ struct ProfileView: View {
                         
                     }
             
+            Button{
+                logout()
+            } label: {
+                Text("Log Out")
+                    .bold()
+                    .frame(width: 200, height: 40)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(.linearGradient(colors: [.cyan, .blue], startPoint: .top, endPoint: .bottomTrailing))
+                    )
+                    .foregroundColor(.white)
+            }
         }
         .padding()
     }
+    //logout function
+    func logout() {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+          return
+        }
+        
+    }
+    
 }
 
 struct ProfileView_Previews: PreviewProvider {
