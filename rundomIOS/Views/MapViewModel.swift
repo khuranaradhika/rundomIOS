@@ -3,6 +3,7 @@ See LICENSE folder for this sample’s licensing information.
 
 Abstract:
 A view that presents a map.
+Contributed by Radhika Khurana on 10/16/22.
 */
 
 import SwiftUI
@@ -79,3 +80,4 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {MapView()}
 }
+
