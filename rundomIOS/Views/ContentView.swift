@@ -39,6 +39,11 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     @StateObject private var viewmodel = MapViewModel()
     @State private var stat_shit = "420"
+    // extension View{
+    //     func getScreenBounds() -> CGRect{
+    //         return UIScreen.main.bounds
+    //     }
+    // }
     // Screen width.
     public var screenWidth: CGFloat {return UIScreen.main.bounds.width}
     // Screen height.
