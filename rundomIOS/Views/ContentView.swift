@@ -61,20 +61,20 @@ struct ContentView: View {
                            Image(systemName: "square.grid.3x3")})
                         .font(.system(size: screenWidth/12))
                         .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        .offset(x: screenWidth/20)
+                        .padding(.leading)
                         Spacer()
                         //Friends Page
-                        NavigationLink(destination: RunView(), label: {
+                        NavigationLink(destination: FriendsView(), label: {
                            Image(systemName: "person.line.dotted.person")})
                         .font(.system(size: screenWidth/12))
                         .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        .offset(x: -screenWidth/3.33)
+                        Spacer()
                         //Profile Page
                         NavigationLink(destination: ProfileView(), label: {
                            Image(systemName: "person.crop.circle")})
                         .font(.system(size: screenWidth/12))
                         .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        .offset(x:-screenWidth/20 )
+                        .padding(.trailing)
                     }
                     Spacer()
                     Text("MOTD: \(firestoreManager.message)")
