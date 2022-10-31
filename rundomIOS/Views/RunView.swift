@@ -29,56 +29,51 @@ struct RunView: View{
             Map(coordinateRegion: $RunModel.region, showsUserLocation: true)
                 .accentColor(Color(.systemRed))
                 .ignoresSafeArea()
-                .frame(height: screenHeight/1.8)
-                .offset(y: -screenHeight/5.5)
+                .frame(height: screenHeight/1.9)
         
                 
-            
                 Text("Current Run")
-                    .font(.system(size: screenWidth/13))
-                    .offset(x: -screenWidth/4, y: -screenHeight/5.5)
+                    .font(.system(size: screenWidth/11))
+                    .offset(x: -screenWidth/4)
+            Spacer()
             HStack{
                 Text("Distance: ")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/6.5)
                     .padding(.leading)
                 Spacer()
                 Text("4.20 Miles")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/6.5)
                     .padding(.trailing)
             }
+            Spacer()
             HStack{
                 Text("Time: ")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/7.5)
                     .padding(.leading)
                 Spacer()
                 Text("42:69")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/7.5)
                     .padding(.trailing)
             }
+            Spacer()
             HStack{
                 Text("Pace: ")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/10.5)
                     .padding(.leading)
                 Spacer()
                 Text("4:20/Mile")
                     .font(.system(size: screenWidth/16))
-                    .offset(y: -screenHeight/10.5)
                     .padding(.trailing)
             }
+            
+            Spacer()
             HStack{
                 Text("Target: ")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/14.5)
                     .padding(.leading)
                 Spacer()
                 Text("4.2 Miles Until Goal")
                     .font(.system(size: screenWidth/16))
-                    .offset( y: -screenHeight/14.5)
                     .padding(.trailing)
 
             }

@@ -24,23 +24,23 @@ struct MapView: View{
     // Screen height.
     public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
     var body: some View{
-        //VStack{
-            Map(coordinateRegion: $MapModel.region, showsUserLocation: true)
-                .accentColor(Color(.systemRed))
-                .ignoresSafeArea()
-                .frame(height: screenHeight/1.3)
-                .onAppear{
-                    MapModel.check_location_enabled()
+        NavigationView{
+            VStack{
+                Map(coordinateRegion: $MapModel.region, showsUserLocation: true)
+                    .accentColor(Color(.systemRed))
+                    .ignoresSafeArea()
+                    .frame(height: screenHeight/1.2)
+                    .onAppear{
+                        MapModel.check_location_enabled()
                 }
-            NavigationView{
-                NavigationLink(destination: RunView(), label: {
-                    Text("StartRun")})
-                .font(.system(size: screenWidth/8))
-                .shadow(color: .gray, radius: 3, x: 0, y: 3)
-                .offset(y: screenHeight/85)
+                Spacer()
+                NavigationLink(destination: RunView(), label: {Text("StartRun")})
+                    .font(.system(size: screenWidth/8))
+                    .shadow(color: .gray, radius: 3, x: 0, y: 3)
+                    
                 
             }
-        //}
+        }
     }
     
 }
