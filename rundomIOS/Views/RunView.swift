@@ -23,6 +23,7 @@ struct RunView: View{
     public var screenWidth: CGFloat {return UIScreen.main.bounds.width}
     // Screen height.
     public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View{
         NavigationView{
             VStack{
@@ -65,7 +66,7 @@ struct RunView: View{
                 }
                 Spacer()
                 
-                NavigationLink(destination: RunView(), label: {Text("End Run")})
+                NavigationLink(destination: Finished_View(), label: {Text("End Run")})
                     .font(.system(size: screenWidth/8))
                     .shadow(color: .gray, radius: 3, x: 0, y: 3)
                 

@@ -29,6 +29,8 @@
 		BA98FFDB28FA51040091AC03 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98FFDA28FA51040091AC03 /* FriendsView.swift */; };
 		BA9C662329021E0100B9AF10 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C662229021E0100B9AF10 /* LoginView.swift */; };
 		BA9C662529022CC200B9AF10 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C662429022CC200B9AF10 /* RunView.swift */; };
+		BAD25F162911874D002770A6 /* Timer_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD25F152911874D002770A6 /* Timer_Manager.swift */; };
+		BAD25F1829119676002770A6 /* Finished_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD25F1729119676002770A6 /* Finished_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		BA98FFDA28FA51040091AC03 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		BA9C662229021E0100B9AF10 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA9C662429022CC200B9AF10 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
+		BAD25F152911874D002770A6 /* Timer_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_Manager.swift; sourceTree = "<group>"; };
+		BAD25F1729119676002770A6 /* Finished_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finished_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				BA9C662229021E0100B9AF10 /* LoginView.swift */,
 				BA98FFDA28FA51040091AC03 /* FriendsView.swift */,
 				BA9C662429022CC200B9AF10 /* RunView.swift */,
+				BAD25F1729119676002770A6 /* Finished_View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				BA0E021528F60334002CE4A5 /* ProfileEditor.swift */,
 				10683EE028FCD23500288D64 /* FirestoreManager.swift */,
 				10993DEB28E39A5E008CB057 /* rundomIOSApp.swift */,
+				BAD25F152911874D002770A6 /* Timer_Manager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -332,6 +338,8 @@
 				10993DF828E39A60008CB057 /* rundomIOS.xcdatamodeld in Sources */,
 				BA2643C128F7AFF6003628C7 /* SocialView.swift in Sources */,
 				BA9C662329021E0100B9AF10 /* LoginView.swift in Sources */,
+				BAD25F1829119676002770A6 /* Finished_View.swift in Sources */,
+				BAD25F162911874D002770A6 /* Timer_Manager.swift in Sources */,
 				10683EE128FCD23500288D64 /* FirestoreManager.swift in Sources */,
 				BA0E021A28F60361002CE4A5 /* MapViewModel.swift in Sources */,
 				BA98FFDB28FA51040091AC03 /* FriendsView.swift in Sources */,
