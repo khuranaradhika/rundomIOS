@@ -154,9 +154,9 @@ struct ContentView: View {
                             .bold()
                     }
                 
-                Rectangle()
-                    .frame(width: 350, height: 1)
-                    .foregroundColor(.white)
+                Divider()
+                    .frame(height: 2)
+                    .background(.white)
                 
                 SecureField("Password", text: $password)
                     .foregroundColor(.white)
@@ -167,9 +167,9 @@ struct ContentView: View {
                             .bold()
                     }
                 
-                Rectangle()
-                    .frame(width: 350, height: 1)
-                    .foregroundColor(.white)
+                Divider()
+                    .frame(height: 2)
+                    .background(.white)
                 
                 Button{
                     register()
