@@ -24,63 +24,54 @@ struct RunView: View{
     // Screen height.
     public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
     var body: some View{
-        VStack{
-            
-            Map(coordinateRegion: $RunModel.region, showsUserLocation: true)
-                .accentColor(Color(.systemRed))
-                .ignoresSafeArea()
-                .frame(height: screenHeight/1.9)
-        
-                
+        NavigationView{
+            VStack{
+                Map(coordinateRegion: $RunModel.region, showsUserLocation: true)
+                    .accentColor(Color(.systemRed))
+                    .ignoresSafeArea()
+                    .frame(height: screenHeight/2.4)
                 Text("Current Run")
                     .font(.system(size: screenWidth/11))
                     .offset(x: -screenWidth/4)
-            Spacer()
-            HStack{
-                Text("Distance: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
                 Spacer()
-                Text("4.20 Miles")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
-            }
-            Spacer()
-            HStack{
-                Text("Time: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
+                HStack{
+                    Text("Distance: ")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.leading)
+                    Spacer()
+                    Text("4.20 Miles")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.trailing)
+                }
                 Spacer()
-                Text("42:69")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
-            }
-            Spacer()
-            HStack{
-                Text("Pace: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
+                HStack{
+                    Text("Time: ")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.leading)
+                    Spacer()
+                    Text("42:69")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.trailing)
+                }
                 Spacer()
-                Text("4:20/Mile")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
-            }
-            
-            Spacer()
-            HStack{
-                Text("Target: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
+                HStack{
+                    Text("Pace: ")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.leading)
+                    Spacer()
+                    Text("4:20/Mile")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.trailing)
+                }
                 Spacer()
-                Text("4.2 Miles Until Goal")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
-
+                
+                NavigationLink(destination: RunView(), label: {Text("End Run")})
+                    .font(.system(size: screenWidth/8))
+                    .shadow(color: .gray, radius: 3, x: 0, y: 3)
+                
+                
             }
-            
         }
-        
-        
     }
     
 }

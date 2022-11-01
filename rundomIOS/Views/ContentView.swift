@@ -21,14 +21,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 
-
-
 //CONTENT VIEW ===================================================================
 struct ContentView: View {
     //user variables
     @State private var email = ""
     @State private var password = ""
     @State private var userIsLoggedIn = false
+    
     //set app delegate
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @Environment(\.managedObjectContext) private var viewContext
@@ -78,7 +77,6 @@ struct ContentView: View {
                     }
                     Spacer()
                     Text("MOTD: \(firestoreManager.message)")
-                        .offset(y: -screenHeight/200)
                     //Weekly Stats
                     NavigationView{
                         List{
@@ -86,30 +84,17 @@ struct ContentView: View {
                             HStack{Text("Total Running Time"); Spacer(); Text("420")}
                             HStack{Text("Total Number of Runs"); Spacer(); Text("420")}
                             HStack{Text("Miles Until Goal"); Spacer(); Text("420")}
-                        }
-                        .navigationTitle("Your Week's Stats:")
-                        .frame(minHeight: screenHeight/3)
-                        .offset(y: screenHeight/15)
-                    }
-                    Spacer()
-                    NavigationView{
-                        List{
                             HStack{Text("Total Miles Ran"); Spacer(); Text("420")}
                             HStack{Text("Total Running Time"); Spacer(); Text("420")}
-                           
                         }
-                        .navigationTitle("Your Recent Badges:")
-                        .offset(y: screenHeight/50)
+                        .navigationTitle("Your Week's Stats:")
                     }
-                    
-                    
-                    
+                    Spacer()
                     //Map Page
                     NavigationLink(destination: MapView(), label: {
                        Image(systemName: "map.circle")})
-                    .font(.system(size: screenWidth/3.5))
+                    .font(.system(size: screenWidth/3))
                     .shadow(color: .gray, radius: 3, x: 0, y: 3)
-                    .offset(y: screenHeight/40)
                 }
             }
         //USER NOT LOGGED IN

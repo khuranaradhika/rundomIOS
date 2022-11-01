@@ -29,7 +29,7 @@ struct MapView: View{
                 Map(coordinateRegion: $MapModel.region, showsUserLocation: true)
                     .accentColor(Color(.systemRed))
                     .ignoresSafeArea()
-                    .frame(height: screenHeight/1.2)
+                    .frame(height: screenHeight/1.25)
                     .onAppear{
                         MapModel.check_location_enabled()
                 }
@@ -37,8 +37,7 @@ struct MapView: View{
                 NavigationLink(destination: RunView(), label: {Text("StartRun")})
                     .font(.system(size: screenWidth/8))
                     .shadow(color: .gray, radius: 3, x: 0, y: 3)
-                    
-                
+
             }
         }
     }

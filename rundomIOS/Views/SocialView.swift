@@ -17,9 +17,9 @@ struct SocialView: View {
     var body: some View {
         VStack{
             Text("Here You Will See Your Friends Activity")
-                .offset(y: screenHeight/90)
-                .font(.system(size: screenWidth/20))
+                .font(.system(size: screenWidth/18))
                 .shadow(color: .gray, radius: 2, x: 0, y: 2)
+            Spacer()
             //to hold the actual photos
             List{
                 ForEach(0..<20){ _ in
@@ -32,8 +32,7 @@ struct SocialView: View {
                     }
                 }
             }
-            .offset(y: screenHeight/70)
-            .frame(minHeight: screenHeight/1.3)
+            .frame(minHeight: screenHeight/1.4)
         }
     }
 }
