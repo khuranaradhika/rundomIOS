@@ -34,7 +34,7 @@ struct MapView: View{
                         MapModel.check_location_enabled()
                 }
                 Spacer()
-                NavigationLink(destination: RunView(), label: {Text("StartRun")})
+                NavigationLink(destination: RunView().navigationBarBackButtonHidden(true), label: {Text("StartRun")})
                     .font(.system(size: screenWidth/8))
                     .shadow(color: .gray, radius: 3, x: 0, y: 3)
 

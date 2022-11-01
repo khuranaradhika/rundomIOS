@@ -47,7 +47,6 @@ struct ContentView: View {
     public var screenWidth: CGFloat {return UIScreen.main.bounds.width}
     // Screen height.
     public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
-    
     var body: some View {
         //USER LOGGED IN:
         if userIsLoggedIn{
@@ -112,7 +111,7 @@ struct ContentView: View {
                     }
                     Spacer()
                     //Map Page
-                    NavigationLink(destination: MapView(), label: {
+                    NavigationLink(destination: MapView().navigationBarBackButtonHidden(true), label: {
                        Image(systemName: "map.circle")})
                     .font(.system(size: screenWidth/3))
                     .shadow(color: .gray, radius: 3, x: 0, y: 3)

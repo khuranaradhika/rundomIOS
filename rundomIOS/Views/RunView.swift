@@ -64,9 +64,10 @@ struct RunView: View{
                         .font(.system(size: screenWidth/16))
                         .padding(.trailing)
                 }
+                
                 Spacer()
                 
-                NavigationLink(destination: Finished_View(), label: {Text("End Run")})
+                NavigationLink(destination: Finished_View().navigationBarBackButtonHidden(true), label: {Text("End Run")})
                     .font(.system(size: screenWidth/8))
                     .shadow(color: .gray, radius: 3, x: 0, y: 3)
                 

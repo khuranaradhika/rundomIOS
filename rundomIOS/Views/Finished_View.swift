@@ -14,36 +14,46 @@ struct Finished_View: View {
     // Screen height.
     public var screenHeight: CGFloat {return UIScreen.main.bounds.height}
     var body: some View {
-        VStack{
-            Text("Congrats You Survived")
-                .font(.system(size: screenWidth/11))
-            Spacer()
-            HStack{
-                Text("Distance: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
+        NavigationView{
+            VStack{
+                Text("Congrats You Survived")
+                    .font(.system(size: screenWidth/11))
                 Spacer()
-                Text("4.20 Miles")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
-            }
-            HStack{
-                Text("Time: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
-                Spacer()
-                Text("42:69")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
-            }
-            HStack{
-                Text("Pace: ")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.leading)
-                Spacer()
-                Text("4:20/Mile")
-                    .font(.system(size: screenWidth/16))
-                    .padding(.trailing)
+                NavigationLink(destination: ContentView().body.navigationBarBackButtonHidden(true), label: {
+                        Image(systemName: "house")})
+                    .font(.system(size: screenWidth/3))
+                    .shadow(color: .gray, radius: 3, x: 0, y: 3)
+                    
+                
+                
+                
+                HStack{
+                    Text("Distance: ")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.leading)
+                    Spacer()
+                    Text("4.20 Miles")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.trailing)
+                }
+                HStack{
+                    Text("Time: ")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.leading)
+                    Spacer()
+                    Text("42:69")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.trailing)
+                }
+                HStack{
+                    Text("Pace: ")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.leading)
+                    Spacer()
+                    Text("4:20/Mile")
+                        .font(.system(size: screenWidth/16))
+                        .padding(.trailing)
+                }
             }
         }
     }
