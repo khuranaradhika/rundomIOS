@@ -212,16 +212,16 @@ struct ContentView: View {
     //login func
     func login() {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if error != nil {
-                print(error!.localizedDescription)
+            if let error {
+                print(error.localizedDescription)
             }
         }
     }
     //register func
     func register() {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if error != nil {
-                print(error!.localizedDescription)
+            if let error {
+                print(error.localizedDescription)
             }
         }
     }
