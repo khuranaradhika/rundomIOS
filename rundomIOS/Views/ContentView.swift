@@ -80,12 +80,33 @@ struct ContentView: View {
                     //Weekly Stats
                     NavigationView{
                         List{
-                            HStack{Text("Total Miles Ran"); Spacer(); Text("420")}
-                            HStack{Text("Total Running Time"); Spacer(); Text("420")}
-                            HStack{Text("Total Number of Runs"); Spacer(); Text("420")}
-                            HStack{Text("Miles Until Goal"); Spacer(); Text("420")}
-                            HStack{Text("Total Miles Ran"); Spacer(); Text("420")}
-                            HStack{Text("Total Running Time"); Spacer(); Text("420")}
+                            HStack{
+                                Text("Total Miles Ran")
+                                Spacer()
+                                Text("420")}
+                            HStack{
+                                Text("Total Running Time")
+                                Spacer()
+                                Text("420")
+                            }
+                            HStack{
+                                Text("Total Number of Runs")
+                                Spacer()
+                                Text("420")}
+                            HStack{
+                                Text("Miles Until Goal")
+                                Spacer()
+                                Text("420")
+                            }
+                            HStack{
+                                Text("Total Miles Ran")
+                                Spacer()
+                                Text("420")}
+                            HStack{
+                                Text("Total Running Time")
+                                Spacer()
+                                Text("420")
+                            }
                         }
                         .navigationTitle("Your Week's Stats:")
                     }

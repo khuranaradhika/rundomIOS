@@ -10,6 +10,8 @@ import SwiftUI
 import Firebase
 
 
+//SCRAP THIS PROBABLY
+
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""

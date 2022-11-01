@@ -60,6 +60,7 @@ struct ProfileView: View {
           print("Error signing out: %@", signOutError)
           return
         }
+        //dismiss view **** NAV TO CONTENTVIEW ****
         
     }
     
