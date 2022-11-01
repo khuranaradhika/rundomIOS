@@ -198,10 +198,7 @@ struct ContentView: View {
             .frame(width: 350)
             .onAppear {
                 Auth.auth().addStateDidChangeListener { auth, user in
-                    if user != nil{
-                        userIsLoggedIn.toggle()
-                        body
-                    }
+                    userIsLoggedIn=user != nil
                 }
             }
         }
