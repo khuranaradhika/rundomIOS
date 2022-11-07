@@ -27,7 +27,8 @@ struct ContentView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var userIsLoggedIn = false
-    
+    //default tab
+    @State var selection = 1
     //set app delegate
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @Environment(\.managedObjectContext) private var viewContext
@@ -36,13 +37,6 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-    @StateObject private var viewmodel = MapViewModel()
-    @State private var stat_shit = "420"
-    // extension View{
-    //     func getScreenBounds() -> CGRect{
-    //         return UIScreen.main.bounds
-    //     }
-    // }
     // Screen width.
     public var screenWidth: CGFloat {return UIScreen.main.bounds.width}
     // Screen height.
@@ -50,72 +44,31 @@ struct ContentView: View {
     var body: some View {
         //USER LOGGED IN:
         if userIsLoggedIn{
-            NavigationView{
-                VStack{
-                    //Top Navigation Bar
-                    HStack {
-                        //Feed Page
-                        NavigationLink(destination: SocialView(), label: {
-                           Image(systemName: "square.grid.3x3")})
-                        .font(.system(size: screenWidth/12))
-                        .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        .padding(.leading)
-                        Spacer()
-                        //Friends Page
-                        NavigationLink(destination: FriendsView(), label: {
-                           Image(systemName: "person.line.dotted.person")})
-                        .font(.system(size: screenWidth/12))
-                        .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        Spacer()
-                        //Profile Page
-                        NavigationLink(destination: ProfileView(), label: {
-                           Image(systemName: "person.crop.circle")})
-                        .font(.system(size: screenWidth/12))
-                        .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                        .padding(.trailing)
-                    }
-                    Spacer()
-                    Text("MOTD: \(firestoreManager.message)")
-                    //Weekly Stats
-                    NavigationView{
-                        List{
-                            HStack{
-                                Text("Total Miles Ran")
-                                Spacer()
-                                Text("420")}
-                            HStack{
-                                Text("Total Running Time")
-                                Spacer()
-                                Text("420")
-                            }
-                            HStack{
-                                Text("Total Number of Runs")
-                                Spacer()
-                                Text("420")}
-                            HStack{
-                                Text("Miles Until Goal")
-                                Spacer()
-                                Text("420")
-                            }
-                            HStack{
-                                Text("Total Miles Ran")
-                                Spacer()
-                                Text("420")}
-                            HStack{
-                                Text("Total Running Time")
-                                Spacer()
-                                Text("420")
-                            }
-                        }
-                        .navigationTitle("Your Week's Stats:")
-                    }
-                    Spacer()
-                    //Map Page
-                    NavigationLink(destination: MapView().navigationBarBackButtonHidden(true), label: {
-                       Image(systemName: "map.circle")})
-                    .font(.system(size: screenWidth/3))
-                    .shadow(color: .gray, radius: 3, x: 0, y: 3)
-                }
+            
+            
+            /*TO-DO: ========
+             - MAKE TABS SWIPEABLE
+             - MAKE HOME THE DEFAULT TAB WHILE KEEPING IT IN THE MIDDLE
+             - ADD EDITVIEW NAVIGATIONVIEW TO PROFILE PAGE FOR SETTINGS
+             - MAKE MAP APPEAR ON HOMEVIEW AND ADD STYLIZED START RUN BUTTON
+             
+             =============*/
+            
+            //TABS
+            TabView(selection: $selection) {
+                SocialView()
+                    //.badge(2)
+                    .tabItem {
+                        Label("Social", systemImage: "person.line.dotted.person")
+                    }.tag(1)
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "figure.run")
+                    }.tag(2)
+                ProfileView()
+                    .tabItem {
+                        Label("Profile", systemImage: "person.crop.circle")
+                    }.tag(3)
             }
         //USER NOT LOGGED IN
         }else{
